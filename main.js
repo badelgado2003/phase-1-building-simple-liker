@@ -3,8 +3,21 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
+const articleHearts = document.querySelectorAll('.like-glyph');
 
+function simpleLiker(e) {
+  mimicServerCall()
+  .then(function (res) {
 
+  })
+  .catch(function (err) {
+
+  });
+};
+
+for (const glyph of articleHearts) {
+  glyph.addEventListener("click", simpleLiker);
+}
 
 
 //------------------------------------------------------------------------------
